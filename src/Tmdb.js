@@ -1,4 +1,6 @@
-const API_KEY = process.env.REACT_APP_TMDB_API_KEY;
+import { type } from "@testing-library/user-event/dist/type";
+
+const API_KEY = '7dc87b20e425b8496e9b2093a0cf2a89';
 const API_BASE = 'https://api.themoviedb.org/3';
 
 /*
@@ -9,16 +11,17 @@ const API_BASE = 'https://api.themoviedb.org/3';
 - comédia
 - terror
 - romance
-- documentários
+- documentários 
 */
 
 const basicFetch = async (endpoint) => {
     const req = await fetch(`${API_BASE}${endpoint}`);
     const json = await req.json();
     return json;
-};
 
-const Tmdb = {
+}
+
+export default {
     getHomeList: async () => {
         return [
             {
@@ -53,7 +56,7 @@ const Tmdb = {
             },
             {
                 slug: 'romance',
-                title: 'Romance',
+                title: 'Românce',
                 items: await basicFetch(`/discover/movie?with_genres=10749&language=pt-BR&api_key=${API_KEY}`)
             },
             {
@@ -63,29 +66,23 @@ const Tmdb = {
             },
         ];
     },
-
     getMovieInfo: async (movieId, type) => {
         let info = {};
 
-        if (movieId) {
-            switch (type) {
+        if(movieId) {
+            switch(type) {
                 case 'movie':
                     info = await basicFetch(`/movie/${movieId}?language=pt-BR&api_key=${API_KEY}`);
-                    break;
-
+                break;
                 case 'tv':
                     info = await basicFetch(`/tv/${movieId}?language=pt-BR&api_key=${API_KEY}`);
-                    break;
-
+                break;
                 default:
                     info = null;
-                    break;
+                break;
             }
         }
 
         return info;
     }
-};
-
-export default Tmdb;
-};
+}
