@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# 🎬 AluraFlix
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> Desafio de desenvolvimento frontend criando uma plataforma estilo streaming para organizar e categorizar seus vídeos e séries favoritos!
 
-## Available Scripts
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 💻 Sobre o Projeto
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+O **AluraFlix** foi desenvolvido como parte de um *Challenge Frontend* da Alura. A ideia principal da aplicação é consumir dados dinâmicos de uma API (The Movie Database - TMDB) e exibir os conteúdos organizados em categorias e listas na interface, simulando a experiência do catálogo da Netflix.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🔗 **Acesse o projeto online:** [Link do Deploy na Vercel](https://seu-link-da-vercel.vercel.app)
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ✨ Funcionalidades
 
-### `npm run build`
+- [x] **Destaque de Banner:** Exibição dinâmica do filme/série principal em destaque na página inicial.
+- [x] **Categorização em Fileiras:** Vídeos/séries divididos por categorias (Lançamentos, Recomendados, etc.).
+- [x] **Carrossel Interativo:** Navegação horizontal suave pelas listas de conteúdos.
+- [x] **Consumo de API Externa:** Integração com a API do TMDB para carregar dados reais e dinâmicos de mídia.
+- [x] **Design Responsivo:** Layout adaptado para navegação fluida tanto em desktop quanto em dispositivos móveis.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠️ Tecnologias Utilizadas
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+As seguintes ferramentas e bibliotecas foram utilizadas na construção deste projeto:
 
-### `npm run eject`
+- **[React](https://reactjs.org/):** Biblioteca principal para construção da interface.
+- **[TMDB API](https://www.themoviedb.org/):** API REST utilizada para busca do catálogo de vídeos e imagens.
+- **CSS3 / Flexbox / CSS Grid:** Estilização responsiva e posicionamento dos elementos.
+- **[Material UI / Lucide React / React Icons]:** *(Remova se não usou)* Ícones e componentes da interface.
+- **[Vercel](https://vercel.com/):** Hospedagem e deploy contínuo.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🔧 Como Executar o Projeto Localmente
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Caso queira clonar e executar o projeto em seu ambiente de desenvolvimento local:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+# 1. Clone este repositório
+git clone [https://github.com/anngmello/challenge-aluraflix.git](https://github.com/anngmello/challenge-aluraflix.git)
 
-## Learn More
+# 2. Acesse a pasta do projeto
+cd challenge-aluraflix
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# 3. Instale as dependências
+npm install
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# 4. Crie um arquivo .env na raiz do projeto e adicione a sua API Key do TMDB:
+REACT_APP_TMDB_KEY=sua_chave_aqui
 
-### Code Splitting
+# 5. Inicie a aplicação
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+<img width="2554" height="989" alt="image" src="https://github.com/user-attachments/assets/27d4e5ca-01a6-4656-98d1-b97074048f60" />
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
