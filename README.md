@@ -37,6 +37,7 @@ As seguintes ferramentas e bibliotecas foram utilizadas na construção deste pr
 - **[Material UI / Lucide React / React Icons]:** *(Remova se não usou)* Ícones e componentes da interface.
 - **[Vercel](https://vercel.com/):** Hospedagem e deploy contínuo.
 
+<img width="2556" height="992" alt="image" src="https://github.com/user-attachments/assets/c0771e6a-2604-400e-9f48-ce7fed5e9c9b" />
 ---
 
 ## 🔧 Como Executar o Projeto Localmente
@@ -60,5 +61,5 @@ REACT_APP_TMDB_KEY=sua_chave_aqui
 npm start
 
 
-<img width="2554" height="989" alt="image" src="https://github.com/user-attachments/assets/27d4e5ca-01a6-4656-98d1-b97074048f60" />
+
 
